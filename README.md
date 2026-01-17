@@ -39,6 +39,16 @@ cp -r skills/prd ~/.config/opencode/skills/
 cp -r skills/ralph ~/.config/opencode/skills/
 ```
 
+### Step 3 (Optional): Add dev-browser skill with addSkill.sh
+
+If you want Ralph to verify frontend changes in the browser, add the `dev-browser` skill:
+
+```bash
+# From your project root
+# addSkill.sh <repo-url> <gh-skill-folder-path>
+./scripts/ralph/addSkill.sh https://github.com/SawyerHood/dev-browser skills/dev-browser
+```
+
 ## Workflow
 
 ### 1. Create a PRD

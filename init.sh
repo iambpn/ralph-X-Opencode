@@ -39,6 +39,14 @@ else
   echo "Warning: ralph.sh not found in $SCRIPT_DIR" >&2
 fi
 
+# Copy addSkill.sh and make it executable
+if [ -f "$SCRIPT_DIR/addSkill.sh" ]; then
+  cp -v "$SCRIPT_DIR/addSkill.sh" "$DEST/scripts/ralph/"
+  chmod +x "$DEST/scripts/ralph/addSkill.sh"
+else
+  echo "Warning: addSkill.sh not found in $SCRIPT_DIR" >&2
+fi
+
 # Copy prompt.md
 if [ -f "$SCRIPT_DIR/prompt.md" ]; then
   cp -v "$SCRIPT_DIR/prompt.md" "$DEST/scripts/ralph/"
