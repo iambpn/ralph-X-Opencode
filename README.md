@@ -64,7 +64,7 @@ This creates `prd.json` with user stories structured for autonomous execution. C
 ### 3. Run Ralph
 
 ```bash
-./scripts/ralph/ralph.sh [max_iterations] [other opencode run args]
+./scripts/ralph/ralph.sh [max_iterations (eg: 10) ] [other opencode run args (eg: -m github-copilot/gpt-5.2-codex --agent=build)]
 ```
 
 Default:
