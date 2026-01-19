@@ -167,7 +167,7 @@ Ralph only works if there are feedback loops:
 
 ### Browser Verification for UI Stories
 
-Frontend stories must include "Verify in browser using dev-browser skill" in acceptance criteria. Ralph will use the dev-browser skill to navigate to the page, interact with the UI, and confirm changes work.
+Frontend stories must include "Verify in browser using dev-browser skill or playwright mcp" in acceptance criteria. Ralph will use the dev-browser skill or playwright mcp to navigate to the page, interact with the UI, and confirm changes work.
 
 ### Stop Condition
 

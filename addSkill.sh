@@ -21,6 +21,6 @@ lastPathName=$(basename $SKILL_FOLDER_PATH)
 
 # create skills directory if not exists
 mkdir -p $SKILLS_DIR
-git clone https://github.com/sawyerhood/dev-browser /tmp/$temp_name
+git clone $GITHUB_URL /tmp/$temp_name
 cp -r /tmp/$temp_name/$SKILL_FOLDER_PATH $SKILLS_DIR/$lastPathName
 rm -rf /tmp/$temp_name
