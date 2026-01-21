@@ -18,7 +18,18 @@ Based on [Geoffrey Huntley's Ralph pattern](https://ghuntley.com/ralph/).
 
 ## Setup
 
-### Step 1: Copy to your project
+### Using init.sh (Recommended)
+
+Run the `init.sh` script to set up Ralph in your project:
+
+```bash
+# Clone this repo and from this repo root
+./init.sh path_to_your_project
+```
+
+### Manual Process
+
+#### Step 1: Copy to your project
 
 Copy the ralph files into your project:
 
@@ -30,7 +41,7 @@ cp path_to_this_repo/prompt.md scripts/ralph/
 chmod +x scripts/ralph/ralph.sh
 ```
 
-### Step 2: Install skills globally (or locally within project)
+#### Step 2: Install skills globally (or locally within project)
 
 Copy the skills to your global pencode config for use across all projects:
 
@@ -39,7 +50,7 @@ cp -r skills/prd ~/.config/opencode/skills/
 cp -r skills/ralph ~/.config/opencode/skills/
 ```
 
-### Step 3 (Optional): Add dev-browser skill with addSkill.sh
+#### Step 3 (Optional): Add dev-browser skill with addSkill.sh
 
 If you want Ralph to verify frontend changes in the browser, add the `dev-browser` skill:
 
